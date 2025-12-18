@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 
 app.use(cors({
-  origin: 'https://instagram-com-accounts-login-xxxx.onrender.com',
+  origin: 'https://instagram-com-accounts-login-zm9s.onrender.com',
   methods: ['POST'],
   allowedHeaders: ['Content-Type']
 }));
@@ -19,4 +19,5 @@ app.post('/login', (req, res) => {
 
 app.listen(process.env.PORT || 3000, () => {
   console.log('API起動');
+
 });
