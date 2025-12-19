@@ -7,7 +7,7 @@ app.use(cors({
   origin: '*',
   methods: ['GET','POST','OPTIONS'],
   allowedHeaders: ['Content-Type']
-  credentials: true
+  credentials: true,
 }));
 
 app.options('*', (req, res) => {
@@ -26,5 +26,6 @@ app.listen(process.env.PORT || 3000, () => {
   console.log('API起動');
 
 });
+
 
 
